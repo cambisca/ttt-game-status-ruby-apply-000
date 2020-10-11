@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
   
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
+  WIN_COMBINATIONS.detect do |win_combination|
     if win_combination == WIN_COMBINATIONS[0] || win_combination == WIN_COMBINATIONS[1] || win_combination == WIN_COMBINATIONS[2] || win_combination == WIN_COMBINATIONS[3] || win_combination == WIN_COMBINATIONS[4] || win_combination == WIN_COMBINATIONS[5] || win_combination == WIN_COMBINATIONS[6] || win_combination == WIN_COMBINATIONS[7] || win_combination == WIN_COMBINATIONS[8] 
 
   end
