@@ -5,4 +5,12 @@ end
 
 # Define your WIN_COMBINATIONS constan
 
-WIN_COMBINATIONS = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+WIN_COMBINATIONS = [
+  [0, 1, 2], #toprow 
+  [3, 4, 5], #middlerow
+  [6, 7, 8], #bottomrow
+  [0, 6, 3], #leftcolumn
+  [1, 4, 6], #middlecolumn
+  [2, 5, 8], #rightcolumn
+  [0, 4, 8], #1diagonal 
+  ]
