@@ -33,3 +33,11 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  if board.any? {|index| index == nil || index == " "}
+    return false
+  else
+    return true
+  end
+end
