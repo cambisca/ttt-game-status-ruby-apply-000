@@ -34,36 +34,3 @@ def won?(board)
   return false
 end
 
-def full?(board)
-  if board.any? do 
-    |index| index == nil || index == " "
-    end
-    return false
-  else
-    return true
-  end
-end
-
-def draw?(board)
-   if !won?(board) && full?(board)
-     return true
-   elsif!full?(board) && !won?(board)
-     return false
-   else won?(board)
-     return false
-   end
-end
-
-def over?(board)
-  if draw?(board) || won?(board) || full?(board) 
-    return true
-  else
-    return false
-  end
-end
-
-def winner(board)
-  if won?(board)
-    return board[won?(board)[0]]
-  end
-end
