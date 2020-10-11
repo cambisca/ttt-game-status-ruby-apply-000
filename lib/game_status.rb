@@ -36,5 +36,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.none {}
+  board.none {|token| 
+    if token 
+  }
 end
