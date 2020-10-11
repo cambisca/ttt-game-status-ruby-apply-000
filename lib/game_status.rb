@@ -36,7 +36,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.none {|token| 
-    if token 
-  }
+  if board.any? {|index| index == nil || index == " "}
+    return false
+  else
+    return true
+  end
 end
